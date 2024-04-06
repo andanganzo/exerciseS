@@ -1,0 +1,33 @@
+.rock-html,
+.paper-html,
+.scissor-html {
+    font-size: 100px;
+    border-radius: 100%;
+    border-radius: none;
+    background-color: rgb(11, 11, 11);
+}
+.picks-div{
+    display: flex;
+    align-items: center;
+    margin-left: 26px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.picks-User,
+.picks-Pc { 
+    display: flex;
+    font-size: 50px;
+    font-family: arial;
+}
+
+.results-Div {
+    font-family: arial;
+    font-size: xx-large;
+}
+.scores-div,
+.resetButton-div {
+    font-family: arial;
+
+}
+

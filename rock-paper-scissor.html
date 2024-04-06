@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body style="background-color: darkolivegreen;"> 
+<link rel="stylesheet" href="RCP.css">
+
+
+<!-- <link rel="stylesheet" href="resultColor.css"> -->
+    <button class="rock-html rock-js" onclick="
+    picks('✊');
+    pcMoves();
+    rock();
+    resetButton();
+    ">✊</button>
+    
+    <button class="paper-html paper-js" onclick="
+    picks('✋');
+    pcMoves(); 
+    paper();
+    resetButton();
+    " >✋</button>
+    <button class="scissor-html scissor-js" onclick="
+    picks('✌️');
+    pcMoves(); 
+    scissor();
+    resetButton();
+    ">✌️</button>
+    
+<div class="picks-div">
+
+<div class="You"></div>
+<div class="picks-User"></div>
+<div class="pc"></div>
+<div class="picks-Pc"></div>
+</div>
+
+<div class="scores-div">
+<div class="results-Div"></div>
+<div class="scores-Div"></div>
+<div class="resetButton-div"> </div>
+<button class="autoplayButton" onclick="
+let autoPlay = setInterval(function () {
+
+randomNum2f();
+pcMoves();
+rock();
+paper();
+scissor();
+
+}, 1000);
+">Autoplay</button>
+</div>
+
+<!-- <h2>JavaScript Math.random()</h2>
+
+<p>Every time you click the button, getRndInteger(min, max) returns a random number between 0 
+and 9 (both included):</p>
+
+<button onclick="document.getElementById('demo')
+.innerHTML = getRndInteger(0,10)">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger(min, max) {
+return Math.floor(Math.random() * (max - min)) + min;
+}
+</script> -->
+
+<script src="RCP.js">
+
+
+</script>
+</body>
+</html>
