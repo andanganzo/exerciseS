@@ -25,16 +25,12 @@
    }
    }
 
-
     function picks (icon) {
     document.querySelector('.You')
     .innerHTML = 'You: ';
     document.querySelector('.picks-User')
     .innerHTML = `${icon}`;
     }
-
-
-
     function resetScore() {
 
     results = '';
@@ -60,9 +56,9 @@
         scores.ties++;
     
         } else if (
-        (playerMove === '✊' && computerMove === '✌️') ||
-        (playerMove === '✋' && computerMove === '✊') ||
-        (playerMove === '✌️' && computerMove === '✋')
+        (playerMove === 'Rock' && computerMove === 'Scissor') ||
+        (playerMove === 'Paper' && computerMove === 'Rock') ||
+        (playerMove === 'Scissor' && computerMove === 'Paper')
         ) {
         results = resultElement.innerHTML = `<p style = "color: rgb(6, 255, 6)">You win.</p>`;
 
@@ -87,19 +83,17 @@
             Loses : ${scores.losses}`; 
             localStorage.setItem('resultCountSave', JSON.stringify(scores));
             }
-      
-
     function pcMoves() {
     const  playerMove = Math.random();
     let computerMove;
     if (playerMove < 0.3199999999999999) {
-    computerMove = '✊'  
+    computerMove = 'Rock'  
     }
     else if (playerMove > 0.3199999999999999 && playerMove < 0.6999999999999999) {
-    computerMove = '✋'  
+    computerMove = 'Paper'  
     }
     else if (playerMove > 0.6999999999999999 && playerMove <= 0.9999999999999999) {
-    computerMove = '✌️'
+    computerMove = 'Scissor'
     }
     return computerMove;
     }
