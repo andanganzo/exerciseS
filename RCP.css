@@ -1,10 +1,14 @@
 .rock-html,
 .paper-html,
 .scissor-html {
-    font-size: 100px;
+    width: 80px;
     border-radius: 100%;
     border-radius: none;
-    background-color: rgb(11, 11, 11);
+    background-color: rgb(113, 44, 153);
+}
+.move-icon{
+    width: 40px;
+    height: 40px;
 }
 .picks-div{
     display: flex;
@@ -14,13 +18,35 @@
     font-weight: bold;
 }
 
-.picks-User,
-.picks-Pc { 
+.picks-User { 
     display: flex;
-    font-size: 50px;
+    font-size: 20px;
     font-family: arial;
+    align-items: center;
+    color: whitesmoke;
 }
+.scores-div {
+    color: whitesmoke;
+    margin-left: 20px;
 
+}
+.resetScore {
+    margin-top: 10px;
+    background-color: rgb(162, 21, 21);
+    color: whitesmoke;
+    font-family: arial;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+.autoplayButton {
+    background-color: rgba(250, 250, 0, 0.536);
+    color: whitesmoke;
+    font-family: arial;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
 .results-Div {
     font-family: arial;
     font-size: xx-large;
