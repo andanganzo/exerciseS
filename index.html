@@ -5,74 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>
 </head>
-<body style="background-color: darkolivegreen;"> 
+<body style="background-color: rgb(92, 44, 120);"> 
 <link rel="stylesheet" href="RCP.css">
 
 
 <!-- <link rel="stylesheet" href="resultColor.css"> -->
-    <button class="rock-html rock-js" onclick="
-    picks('✊');
-    pcMoves();
-    rock();
-    resetButton();
-    ">✊</button>
-    
-    <button class="paper-html paper-js" onclick="
-    picks('✋');
-    pcMoves(); 
-    paper();
-    resetButton();
-    " >✋</button>
-    <button class="scissor-html scissor-js" onclick="
-    picks('✌️');
-    pcMoves(); 
-    scissor();
-    resetButton();
-    ">✌️</button>
+    <img class="rock-html" src="icons/✊-emoji.png" onclick="
+    makeMove('✊')
+    ">
+    <img class="paper-html" src="icons/✋-emoji.png"onclick="
+   makeMove('✋')
+    ">
+ <img class="scissor-html" src="icons/✌️-emoji.png"onclick="
+    makeMove('✌️')
+
+ ">
+ 
     
 <div class="picks-div">
 
 <div class="You"></div>
-<div class="picks-User"></div>
+<p class="picks-User"></p>
 <div class="pc"></div>
 <div class="picks-Pc"></div>
 </div>
-
+<p class="js-moves-chosen"></p>
 <div class="scores-div">
 <div class="results-Div"></div>
 <div class="scores-Div"></div>
-<div class="resetButton-div"> </div>
-<button class="autoplayButton" onclick="
-let autoPlay = setInterval(function () {
+<button class="resetScore" onclick="resetScore()">Reset Score</button>
+<button class="autoplayButton" onclick="autoplay()">Auto play</button>
+</div> 
 
-randomNum2f();
-pcMoves();
-rock();
-paper();
-scissor();
-
-}, 1000);
-">Autoplay</button>
-</div>
-
-<!-- <h2>JavaScript Math.random()</h2>
-
-<p>Every time you click the button, getRndInteger(min, max) returns a random number between 0 
-and 9 (both included):</p>
-
-<button onclick="document.getElementById('demo')
-.innerHTML = getRndInteger(0,10)">Click Me</button>
-
-<p id="demo"></p>
-
-<script>
-function getRndInteger(min, max) {
-return Math.floor(Math.random() * (max - min)) + min;
-}
-</script> -->
 
 <script src="RCP.js">
-
+ 
 
 </script>
 </body>
